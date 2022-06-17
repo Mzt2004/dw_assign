@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font awesome/all.css">
+    <script src="hge.js"></script>
+</head>
+<body>
+    <nav class="mynav">
+        <div class="leftnav">
+           
+                <li><img src="photos and vds/gym logo.png" alt="logo" class="logo"></li>
+            <li ><a href="Home.html">Home</a> </li>
+            <li><a href="Info.html">Info</a></li>
+            <li><a href="Wanted.html">Wanted</a></li>
+            <li><a href="Workshop.html">Workshop</a></li>
+            <li><a href="Gallery.html">Gallery</a> </li>
+            <li> <a href="Featured.html">Featured</a></li>
+           
+        </div>
+        <div class="rightnav">
+            <div class="login">
+                <i class="fa-solid fa-user"></i><span><a href="login.html">Sign Up</a> </span>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" onmouseover="homesearch();"></i>
+                <input type="text" id="navsearchbar" class="hidesearchbar" placeholder="Search">
+            </div>
+            
+        </div>
+    </nav>
+    <nav class="mobile">
+        <div class="mobilenav">
+            <img src="photos and vds/gym logo.png" alt="logo" class="logo">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="Home.html"><i class="fa-solid fa-house"></i>Home</a>
+              <a href="Info.html"><i class="fa-solid fa-circle-info"></i>Info</a>
+              <a href="Wanted.html"><i class="fa-solid fa-basket-shopping"></i>Wanted</a>
+              <a href="Contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+              <a href="Workshop.html"><i class="fa-solid fa-briefcase"></i>Workshop</a>
+              <a href="Gallery.html"><i class="fa-solid fa-cart-shopping"></i>Gallery</a>
+              <a href="Featured.html"><i class="fa-solid fa-arrow-trend-up"></i>Featured</a>
+              <a href="Booking.html"><i class="fa-solid fa-mobile"></i>Booking</a>
+              <a href="login2.html"><i class="fa-solid fa-user"></i>Log In</a>
+              <a href="login.html"><i class="fa-solid fa-user-plus"></i>Sign Up</a>
+            </div>
+    </nav>
+    <h1 class="wantedformh1">Create Your Free Lifetime Account</h1>
+    <main class="wantedsignup">
+        <!-- Info -->
+        <div class="signupinfo">
+            <p>Sign up for free to get access our online database and search for available second-hand equipment!</p>
+        </div>
+        <!-- Form -->
+        <div class="signupform">
+            <div class="formrowh">
+                <h2>SIGN UP</h2>
+            </div>
+            <div class="formrow">
+                <label for="username"><i class="fa-solid fa-user"></i></label>
+                <input type="text" name="username" placeholder="USERNAME" required>
+            </div>
+            <div class="formrow">
+                <label for="email"><i class="fa-solid fa-envelope"></i></i></label>
+                <input type="email" name="email" placeholder="EMAIL" required>
+            </div>
+            <div class="formrow">
+                <label for="password"><i class="fa-solid fa-lock"></i></i></label>
+                <input type="password" name="password" placeholder="PASSWORD" required>
+            </div>
+            <div class="formrow">
+                <label for="confrimpassword"><i class="fa-solid fa-arrow-rotate-right"></i></label>
+                <input type="password" name="confirmpassword" placeholder="CONFIRM PASSWORD" required>
+            </div>
+            <div class="formrow1">
+                <input type="checkbox" name="terms and policy" required>
+                <label for="terms and policy">I accept the <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></label>
+            </div>
+            <div class="formrow1">
+                <button>Submit</button>
+            </div>
+            <div class="formrow2">
+                <label>Already have an account? <a href="login2.html">Sign In</a></label>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="footermain">
+            <div>
+                <img src=".//photos and vds/gym logo.png" alt="HNG Logo" class="footerlogo">
+            </div>
+            
+            <div class="col2">
+                <ul>
+                    <li><a href="Home.html">Home</a> </li>
+                    <li><a href="Info.html">Info</a></li>
+                    <li><a href="Wanted.html">Wanted</a></li>
+                    <li><a href="Workshop.html">Workshop</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <ul>
+                <li><a href="login2.html">Log In</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <!-- <li><a href="Contact.html">Contact</a></li> -->
+                <li><a href="Featured.html">Featured</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+            <h2>Follow Us :</h2>
+            <div class="footericons">
+                
+                <ul>
+                    <li><a href=""><img src="../dw assignment/photos and vds/facebook.png" alt="facebook logo" class="footerimg"></a></li>
+                    <li><a href=""><img src="../dw assignment/photos and vds/glyph-logo_May2016-150x150.png" alt="instagrm logo" class="footerimg"></a></li>
+                    <li><a href=""><img src="../dw assignment/photos and vds/Twitter_Logo_WhiteOnImage-150x150.png" alt="twitter logo" class="footerimg"></a></li>
+                    <li><a href=""><img src="../dw assignment/photos and vds/yt_icon_mono_light-310x219.png" alt="youtube logo" class="footerimg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="footerbottom">
+            <div class="footercontainer">
+                <div class="col2">
+                    <ul>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li> <a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookies Policy</a></li>
+                    </ul>
+                </div>
+            <div class="col1">
+                <span>
+                  <p>HGEfitness.com is part of A360 Media LLC Fitness & Health Network</p> <p>Copyright 2022 JW Media, LLC, parent company of HGE Fitness. All rights reserved.</p> 
+                </span>
+            </div>
+            
+            
+        </div>
+        </div>
+        </footer>
+</body>
+</html>

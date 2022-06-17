@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font awesome/all.css">
+    <script src="hge.js"></script>
+</head>
+<body>
+    <nav class="mynav">
+        <div class="leftnav">
+           
+                <li><img src="photos and vds/gym logo.png" alt="logo" class="logo"></li>
+            <li ><a href="Home.html">Home</a> </li>
+            <li><a href="Info.html">Info</a></li>
+            <li><a href="Wanted.html">Wanted</a></li>
+            <li><a href="Workshop.html">Workshop</a></li>
+            <li class="current">Gallery</li>
+            <li> <a href="Featured.html">Featured</a></li>
+           
+        </div>
+        <div class="rightnav">
+            <div class="login">
+                <i class="fa-solid fa-user"></i><span><a href="login.html">Sign Up</a> </span>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" onmouseover="homesearch();"></i>
+                <input type="text" id="navsearchbar" class="hidesearchbar" placeholder="Search">
+            </div>
+            
+        </div>
+    </nav>
+    <nav class="mobile">
+        <div class="mobilenav">
+            <img src="photos and vds/gym logo.png" alt="logo" class="logo">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="Home.html"><i class="fa-solid fa-house"></i>Home</a>
+              <a href="Info.html"><i class="fa-solid fa-circle-info"></i>Info</a>
+              <a href="Wanted.html"><i class="fa-solid fa-basket-shopping"></i>Wanted</a>
+              <a href="Contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+              <a href="Workshop.html"><i class="fa-solid fa-briefcase"></i>Workshop</a>
+              <a href="Gallery.html"><i class="fa-solid fa-cart-shopping"></i>Gallery</a>
+              <a href="Featured.html"><i class="fa-solid fa-arrow-trend-up"></i>Featured</a>
+              <a href="Booking.html"><i class="fa-solid fa-mobile"></i>Booking</a>
+              <a href="login2.html"><i class="fa-solid fa-user"></i>Log In</a>
+              <a href="login.html"><i class="fa-solid fa-user-plus"></i>Sign Up</a>
+            </div>
+    </nav>
+    <div class="carticon" onclick="cartactivate();">
+        <i class="fa-solid fa-cart-arrow-down" ></i>
+    </div>
+    <div class="cartcontainer" id="cartcontainer">
+        <div class="cartblank">
+
+        </div>
+   
+        <div class="cartinfo">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Your Cart</h3>
+            <i class="fa-solid fa-xmark cartx" onclick="cartdeactivate();"></i>
+
+            <div class="ordercontainer">
+                <div class="oproductimg">
+                    <img src=".//photos and vds/equipment1.jpg" alt="multi function equipment">
+                </div>
+                <div class="oproductinfo">
+                    <li><h4>3 station home gym(62+functions)</h4></li>
+                    <li>$3400 x 1 </li>
+                    <li>= $3400</li>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+            <div class="ordercontainer">
+                <div class="oproductimg">
+                    <img src=".//photos and vds/equipment2.jpg" alt="multi function equipment">
+                </div>
+                <div class="oproductinfo">
+                    <li><h4>3 station home gym(62+functions)</h4></li>
+                    <li>$3400 x 1 </li>
+                    <li>= $3400</li>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <main class="gallery">
+        <h1>Product Gallery</h1>
+        <h2>Multi-Function Gym Equipment</h2>
+        <div class="galleryproducts">
+            <div class="innergallery">
+                <img src=".//photos and vds/equipment1.jpg" alt="multi function equipment">
+                <h3>3 station home gym(62+functions)</h3>
+                <p>$3400</p>
+                <button onclick="cartactivate();">
+                    Add to Cart
+                </button>
+                <button onclick="moredetail();">
+                  More Detail
+                </button>
+                
+                <div class="moredetails", id="moredetails">
+                    <div class="back">
+                        <i class="fa-regular fa-circle-xmark" onclick="goback();"></i>
+                    </div>
+                        <h3>Features</h3>
+                <ol>
+                    <li>Foadable dip</li>
+                <li>Detachable high speed ball</li>
+                <li>One step foam</li>
+                <li>40*80mm 2.5mm upper frame</li>
+                <li>73KG weight stack</li>
+                <li>Lock knob adjustment</li>
+                <li>Commeriacl use handle</li>
+                <li>Seat adjustment</li>
+                <li>Arm curl Stand</li>
+                <li>Triceps rope(high quality)</li>
+                </ol>
+                
+                <h3>Product Parameter</h3>
+                <ul>
+                    <li>Bearing: 300KG</li>
+                    <li>Seat thickness: 60MM</li>
+                    <li>Features: Fullbody workout</li>
+                    <li>Gross weight: 210KG</li>
+                </ul>
+               
+                    </div>
+                    
+                        
+                
+
+
+            </div>
+            <div class="innergallery">
+                <img src=".//photos and vds/wanted1.jpg" alt="multi function equipment">
+                <h3>multi-function gym equipment</h3>
+                <p>$1800</p>
+                <button>
+                    Add to Cart
+                </button>
+                <button onclick="moredetail1();">
+                    More Detail
+                  </button>
+                  
+                  <div class="moredetails", id="moredetails1">
+                      <div class="back">
+                          <i class="fa-regular fa-circle-xmark" onclick="goback1();"></i>
+                      </div>
+                          <h3>Features</h3>
+                  <ol>
+                      <li>Heavy Duty</li>
+                  <li>Pulley System </li>
+                  <li>Lat Pull</li>
+                  <li>Resistance</li>
+                  <li>Dip Station</li>
+                  <li>Sit Up Bench </li>
+                  <li>Dimensions: 82" H x 70" L x 70" W.</li>
+                  </ol>
+                  
+                  <h3>Product Parameter</h3>
+                  <ul>
+                      <li>Model: 	
+                        RS 90XLS</li>
+                      <li>Item Width: 70"</li>
+                      <li>Sport/Activity: Bodybuilding</li>
+                      <li>Material: Steel</li>
+                      <li>Load Capacity: 400 / 1000 lbs</li>
+                      <li>Standard: Home Use</li>
+                      <li>Item Weight: 320Pounds</li>
+                      <li>Manufacturer Warranty: 1year</li>
+                  </ul>
+                 
+                      </div>
+            </div>
+            <div class="innergallery">
+                <img src=".//photos and vds/equipment3.jpg" alt="multi function equipment">
+                <h3>Bodybuilding Fitness Machine 3 Stations Multi-functional Exercise Equipment</h3>
+                <p>$3000</p>
+                <button>
+                    Add to Cart
+                </button>
+                <button onclick="moredetail2();">
+                    More Detail
+                  </button>
+                  
+                  <div class="moredetails", id="moredetails2">
+                      <div class="back">
+                          <i class="fa-regular fa-circle-xmark" onclick="goback2();"></i>
+                      </div>
+                          <h3>Features</h3>
+                  <ol>
+                      <li>Foadable dip</li>
+                  <li>Detachable high speed ball</li>
+                  <li>One step foam</li>
+                  <li>40*80mm 2.5mm upper frame</li>
+                  <li>73KG weight stack</li>
+                  <li>Lock knob adjustment</li>
+                  <li>Commeriacl use handle</li>
+                  <li>Seat adjustment</li>
+                  <li>Arm curl Stand</li>
+                  <li>Triceps rope(high quality)</li>
+                  </ol>
+                  
+                  <h3>Product Parameter</h3>
+                  <ul>
+                      <li>Bearing: 300KG</li>
+                      <li>Seat thickness: 60MM</li>
+                      <li>Features: Fullbody workout</li>
+                      <li>Gross weight: 210KG</li>
+                  </ul>
+                 
+                      </div>
+            </div>
+                
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wanted7.jpg" alt="multi function equipment">
+                        <h3>everyday Essentials Comprehensive Compact Home Fitness Gym System</h3>
+                        <p>$1750</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wanted2.jpg" alt="multi function equipment">
+                        <h3>6 Station Exercise Equipment Machine Adjustable Weight </h3>
+                        <p>$1500</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wanted5.jpg" alt="multi function equipment">
+                        <h3>150lb Weight Stack Machine</h3>
+                        <p>$90</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                </div>
+                <h2>Gym Bikes</h2>
+                <div class="galleryproducts">
+                    <div class="innergallery">
+                        <img src=".//photos and vds/bicycle1.jpg" alt="multi function equipment">
+                        <h3>spinning bike with 10kg fly wheel</h3>
+                        <p>$1200</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/bicycle2.jpg" alt="multi function equipment">
+                        <h3>recumbent bike</h3>
+                        <p>$999</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/bicycle article.jpg" alt="multi function equipment">
+                        <h3>Spinning bike I-30P(best seller last month)</h3>
+                        <p>$1400</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                </div>        
+                <h2>Ellipticals</h2>
+                <div class="galleryproducts">
+                    <div class="innergallery">
+                        <img src=".//photos and vds/elliptical1.jpg" alt="multi function equipment">
+                        <h3>budget friendly elliptical </h3>
+                        <p>$699</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/elliptical2.jpg" alt="multi function equipment">
+                        <h3>commercial grade as a resedential price</h3>
+                        <p>$2400</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/elliptical article1.jpg" alt="multi function equipment">
+                        <h3>LATEST model f360 (30%off)</h3>
+                        <p>$1900</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                </div>        
+                <h2>Treadmills</h2>
+                <div class="galleryproducts">
+                    <div class="innergallery">
+                        <img src=".//photos and vds/treadmill model1.jpg" alt="multi function equipment">
+                        <h3> Fs-2022 model treadmill </h3>
+                        <p>$1999</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/treadmill info.jpg" alt="multi function equipment">
+                        <h3>BRAND NEW TREADMILL WITH FAVOURABLE PRICE</h3>
+                        <p>$2200</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/treadmill pro.jpg" alt="multi function equipment">
+                        <h3>Fs-2022 pro treadmill</h3>
+                        <p>$3500</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/equipment2.jpg" alt="multi function equipment">
+                        <h3>MND-13 treadmill</h3>
+                        <p>$2300</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                </div>    
+                <h2>wearables</h2>    
+                <div class="galleryproducts">
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables1.jpg" alt="multi function equipment">
+                        <h3>Fitbit Surge Fitness Superwatch </h3>
+                        <p>$200</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables2.jpg" alt="multi function equipment">
+                        <h3>Polar Vantage M Multisport Watch</h3>
+                        <p>$380</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables3.jpg" alt="multi function equipment">
+                        <h3>Garmin Forerunner 935</h3>
+                        <p>$300</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables4.jpg" alt="multi function equipment">
+                        <h3>Atlas Wearables Wristband </h3>
+                        <p>$250</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables5.jpg" alt="multi function equipment">
+                        <h3>TicWatch Pro 4GLTE Smartwatch</h3>
+                        <p>$150</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables6.jpg" alt="multi function equipment">
+                        <h3>Garmin vivosmart HR Activity tracker</h3>
+                        <p>$199.99</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                    <div class="innergallery">
+                        <img src=".//photos and vds/wearables7.jpg" alt="multi function equipment">
+                        <h3>Scosche Rythm+ Heartrate Monitor Armband</h3>
+                        <p>$180</p>
+                        <button>
+                            Add to Cart
+                        </button>
+                        <button>
+                            More Detail
+                          </button>
+                    </div>
+                </div>       
+                
+                
+    </main>
+   
+    
+
+    </h2>
+    <footer>
+        <div class="footermain">
+        <div>
+            <img src=".//photos and vds/gym logo.png" alt="HNG Logo" class="footerlogo">
+        </div>
+        
+        <div class="col2">
+            <ul>
+                <li><a href="Home.html">Home</a> </li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="Wanted.html">Wanted</a></li>
+                <li><a href="Workshop.html">Workshop</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <ul>
+            <li><a href="login2.html">Log In</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <!-- <li><a href="Contact.html">Contact</a></li> -->
+            <li><a href="Featured.html">Featured</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+        </ul>
+    </div>
+    <div class="col4">
+        <h2>Follow Us :</h2>
+        <div class="footericons">
+            
+            <ul>
+                <li><a href="facebook.com"><img src="../dw assignment/photos and vds/facebook.png" alt="facebook logo" class="footerimg"></a></li>
+                <li><a href="instagram.com"><img src="../dw assignment/photos and vds/glyph-logo_May2016-150x150.png" alt="instagrm logo" class="footerimg"></a></li>
+                <li><a href="twitter.com"><img src="../dw assignment/photos and vds/Twitter_Logo_WhiteOnImage-150x150.png" alt="twitter logo" class="footerimg"></a></li>
+                <li><a href="youtube.com"><img src="../dw assignment/photos and vds/yt_icon_mono_light-310x219.png" alt="youtube logo" class="footerimg"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="footerbottom">
+        <div class="footercontainer">
+        <div class="col1">
+            <span>
+              <p>HGEfitness.com is part of A360 Media LLC Fitness & Health Network</p> <p>Copyright 2022 JW Media, LLC, parent company of HGE Fitness. All rights reserved.</p> 
+            </span>
+        </div>
+        <div class="col2">
+            <ul>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li> <a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </footer>
+</body>
+</html>

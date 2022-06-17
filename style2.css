@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+}
+.myheader img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+#mynav li{
+    float: left;
+    list-style: none;
+    font-family: 'Luxurious Roman', cursive;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+#mynav {
+    margin: 0;
+    padding: 0;
+    position:fixed;
+    top: 0%;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    z-index: 2;
+}
+#mynav ul{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+#mynav .dropbtn{
+    background-color: rgba(210, 183, 30, 0.9);
+    color: black;
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+}
+#mynav .dropdown:hover{
+    background-color: black;
+    color: rgb(255, 200, 80);
+    font-size: 18px;
+}
+
+ a:link, a:visited {
+    background-color: rgba(0, 0, 0, 0.664);
+    color: whitesmoke;
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  
+   a:hover, a:active {
+    background-color: black;
+    color: rgb(255, 200, 80);
+    font-size: 18px;
+  }
+  #mynav .current{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: rgb(255, 200, 80);
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+  }
+  .search_bar{
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 10px;
+  }
+  .search_bar:hover, .login:hover{
+      cursor: pointer;
+  }
+  #mynav .login a:link,#mynav .login a:visited{
+      background-color: white;
+      color: black;
+      border-right: 1px solid black;
+      margin-right: 20px;
+      padding: 10px;
+  }
+  #mynav .rightnav{
+      float: right;
+      margin: 40px;
+  }
+  .captionh{
+      position: absolute;
+      top: 95%;
+      left: 300px;
+      z-index: 2;
+      font-family: 'Luxurious Roman', cursive;
+      font-size: 50px;
+      color: aliceblue;
+      text-transform: uppercase;
+  }
+  .captionh p{
+      margin: 0;
+  }
+  .capborder{
+    border-left: 2px solid rgb(210, 183, 30);
+    padding-left: 10px;
+  }
+  .capcolor{
+    color: rgb(210, 183, 30);
+  }
+  .exclamation{
+      color: rgba(210, 168, 30, 0.932);
+      font-family: 'Sansita Swashed', cursive;
+      
+  }
+.capbtn a:link, .capbtn a:visited{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(210, 183, 30, 0.685);
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0px 5px 8px 0px rgb(210, 183, 30);
+    border: 1px solid rgb(210, 183, 30);
+    border-radius: 15px;
+}
+.capbtn a:hover,.capbtn a:active{
+    padding: 12px 22px;
+    margin: 0;
+    background-color: rgb(210, 183, 30);
+    color: white;
+    box-shadow: 0px 6px 10px 0 rgba(210, 183, 30, 0.685);
+    border: 1px solid rgb(210, 183, 30);
+}
+ span .capbtn{
+    /* margin-top: 20px; */
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0px 6px 10px 0 black;
+    margin: 0;
+}
+
+/* @media screen and (max-width:800px){
+    header.captionh{
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        height: 200px;
+        line-height: 200px;
+        top: 50%;
+    }
+    header.img{
+        width: 100px;
+        position: relative;
+
+    }
+} */
+footer{
+    width: 100%;
+     background-color: rgb(15, 13, 13);
+ }
+ .col1,.col2,.col3,.col4{
+     width: 25%;
+ }
+ footer ul{
+     text-decoration: none;
+     list-style-type: none;
+ }
+ .footerlogo{
+     width: 70px;
+     height: 70px;
+     margin: 20px;
+ }
+ .col2 a:link,.col2 a:visited,.col3 a:link,.col3 a:visited,.col4 a:link,.col4 a:visited{
+     text-decoration: none;
+     color: whitesmoke;
+     
+     padding: 20px;
+     background-color:none ;
+     font-size: 16px;
+     text-transform: uppercase;
+     font-family:'Luxurious Roman', cursive ;
+ }
+ .col2 a:hover,.col2 a:active,.col3 a:hover,.col3 a:active,.col4 a:hover,.col4 a:active{
+     text-decoration: underline;
+     color: white;
+ }
+ .col2 li,.col3 li{
+     margin: 30px;
+ }
+ .col4 h2{
+     font-weight: bold;
+     color: wheat;
+     padding: 0;
+     text-align: center;
+     margin-bottom: 35px;
+ }
+ .footericons ul{
+     display: flex;
+ }
+ .footerimg{
+     width: 50px;
+     height: 50px;
+     border-radius: 25%;
+ }
+ .col4{
+     margin-top: 30px;
+ }
+ .footermain{
+     padding-bottom: 40px;
+     border-bottom: 1px solid white;
+     display: flex;
+     width: 100%;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+ .footerbottom{
+     width: 100%;
+ }
+ .footerbottom ul{
+     display: flex;
+ }
+ .footercontainer{
+     display: flex;
+ }
+ .footerbottom .col1,.footerbottom .col2{
+     width: 50%;
+ }
+ .footerbottom .col1 a:link,.footerbottom .col1 a:visited,.footerbottom .col2 a:link,.footerbottom .col2 a:visited{
+   font-size: 12px;
+   padding: 0;
+ }
+ .footercontainer p{
+     color: white;
+     margin: 20px;
+ }
+
+ .bookcontainer{
+    width: 100%;
+    display: flex;
+    margin: 20px 0 20px 0;
+    height: 300px;
+    background-color: black;
+}
+ .bookimg1{
+    width: 33.33%;
+    display: block;
+    position: relative;
+}
+.bookimg1 img{
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+}
+.bookcaption{
+    width: 33.33%;
+    position: absolute;
+    background-color: rgb(119, 108, 10);
+    left: 30%;
+    height: 300px;
+    z-index: 2;
+    border-radius: 50%;
+}
+.bookcaption p{
+    text-align: center;
+    color: rgb(250, 242, 228);
+    font-size: 23px;
+    font-weight: bold;
+    font-family:'Luxurious Roman', cursive ;
+    padding: 0;
+}
+.captionmargin{
+    margin-top: 20%;
+}
+.bookcaption span{
+    margin-left: 36%;
+    width: 100px;
+   height: 50px;
+   padding: 0;
+   margin-top: 15px;
+}
+.bookcaption span a:link,.bookcaption span a:visited{
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(0, 255, 42, 0.507);
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0px 5px 8px 0px rgba(0, 255, 42, 0.753);
+    border: 1px solid rgba(0, 255, 42, 0.753);
+    border-radius: 20px;
+    padding: 10px;
+}
+.bookcaption span a:hover,.bookcaption span a:active{
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(210, 183, 30);
+    color: rgba(245, 245, 245, 0.856);
+    box-shadow: 0px 6px 10px 0 rgb(210, 183, 30);
+    border: 1px solid rgb(210, 183, 30);
+}
+.bookimg2{
+    width: 33.33%;
+    height: 100%;
+    position: absolute;
+    right: 10%;
+}
+.bookimg2 img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.partner{
+    display: flex;
+    background-color: rgb(189, 178, 178);
+}
+.partner .col1{
+    width: 40%;
+}
+.partner .col1 img{
+    width: 100%;
+    height: auto;
+    margin: 0 20px 0 0;
+}
+.partner .col2{
+    width: 60%;
+    margin: 30px 0 0 40px;
+}
+.partner h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(17, 15, 15);
+    font-family: 'Luxurious Roman', cursive;
+}
+.partner span{
+    font-size: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family:'Luxurious Roman', cursive ;
+    font-variant: small-caps;}
+.partner p{
+     font-size: 20px;
+     font-family: 'Roboto' ;
+     line-height: 60px;
+     line-break: normal;
+     margin-right: 10px;
+     font-weight: 500;
+}
+.partner .p1{
+    font-size: 25px;
+    font-family: 'Luxurious Roman', cursive;
+    font-weight: 200;
+}
+.homefeatured{
+    width: 100%;
+    display: flex;
+    border-bottom: 6px solid rgb(210, 183, 30);
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: wheat;
+}
+.homefeatured .col1, .homefeatured .col3{
+    width: 35%;
+}
+.col1 video,.col3 video{
+    width: 100%;
+    height: auto;
+}
+
+.homefeatured .col2{
+    width: 30%;
+    margin-left: 35px;
+}
+.homefeatured p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Luxurious Roman', cursive;
+    
+   
+}
+.homefeatured .span1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family:  'Luxurious Roman', cursive;
+   text-align: center;
+    color:   rgb(210, 183, 30);
+    margin: 0;
+}
+.homefeatured span{
+     margin-left: 30%;
+}
+.homefeatured span a:link,.homefeatured span a:visited{
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(0, 255, 42);
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0px 5px 8px 0px rgb(0, 255, 42);
+    border: 1px solid rgb(0, 255, 42);
+    border-radius: 20px;
+    padding: 15px 22px;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font awesome/all.css">
+    <script src="hge.js"></script>
+</head>
+<body>
+    <nav class="mynav">
+        <div class="leftnav">
+           
+                <li><img src="photos and vds/gym logo.png" alt="logo" class="logo"></li>
+            <li ><a href="Home.html"> Home</a></li>
+            <li class="current">Info</li>
+            <li><a href="Wanted.html">Wanted</a></li>
+            <li><a href="Workshop.html">Workshop</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li> <a href="Featured.html">Featured</a></li>
+           
+        </div>
+        <div class="rightnav">
+            <div class="login">
+                <i class="fa-solid fa-user"></i><span><a href="login.html">Sign Up</a> </span>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" onmouseover="homesearch();"></i>
+                <input type="text" id="navsearchbar" class="hidesearchbar" placeholder="Search">
+            </div>
+            
+        </div>
+    </nav>
+    <nav class="mobile">
+        <div class="mobilenav">
+            <img src="photos and vds/gym logo.png" alt="logo" class="logo">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="Home.html"><i class="fa-solid fa-house"></i>Home</a>
+              <a href="Info.html"><i class="fa-solid fa-circle-info"></i>Info</a>
+              <a href="Wanted.html"><i class="fa-solid fa-basket-shopping"></i>Wanted</a>
+              <a href="Contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+              <a href="Workshop.html"><i class="fa-solid fa-briefcase"></i>Workshop</a>
+              <a href="Gallery.html"><i class="fa-solid fa-cart-shopping"></i>Gallery</a>
+              <a href="Featured.html"><i class="fa-solid fa-arrow-trend-up"></i>Featured</a>
+              <a href="Booking.html"><i class="fa-solid fa-mobile"></i>Booking</a>
+              <a href="login2.html"><i class="fa-solid fa-user"></i>Log In</a>
+              <a href="login.html"><i class="fa-solid fa-user-plus"></i>Sign Up</a>
+            </div>
+    </nav>
+    <main class="info">
+        <h1>Featured Article</h1>
+        <div class="ftarticle">
+            <div class="innerft">
+                <img src=".//photos and vds/info1.jpg" alt="workout">
+                <div class="infotablet"><h2>THESE 4 LEG MOVES CAN BE DONE ON ANY CABLE MACHINE</h2>
+                    <p>Who knew you can blast out a complete lower-body workout on this popular contraption?</p>
+                    <button><a href="article1.html">Read Article</a></button></div>
+                
+            </div>
+            <div class="innerft">
+                <img src=".//photos and vds/info2.jpg" alt="nutrition">
+                <div class="infotablet"><h2>TRY THIS VEGAN-INSPIRED DISH FOR CHRISTMAS DINNER TWIST</h2>
+                    <p>Chef Michael Floch Serves up a Merry Vegan Christmas with a tasty casserole.</p>
+                    <button><a href="">Read Article</a></button></div>
+                
+            </div>
+            <div class="innerft">
+                <img src=".//photos and vds/treadmill info.jpg" alt="treadmill">
+                <div class="infotablet">
+                    <h2>BRAND NEW TREADMILL WITH FAVOURABLE PRICE</h2>
+                <p> New functions, new features and tempting price</p>
+                <button><a href="">Shop Now</a> </button>
+                </div>
+            </div>
+        </div>
+        <h1>WorkOuts</h1>
+        <div class="workouts">
+        <div class="innerft">
+            <img src=".//photos and vds/workout1.jpg" alt="workout">
+            <div class="infotablet">
+                <h2>EFFECTIVE AND USEFUL HOME WORKOUT TIPS</h2>
+            <p>Don't miss out the easy workout tricks</p>
+            <button><a href="">Read Article</a></button>
+            </div>
+            
+        </div>
+        <div class="innerft">
+            <img src=".//photos and vds/info1.jpg" alt="workout">
+            <div class="infotablet">
+                <h2>THESE 4 LEG MOVES CAN BE DONE ON ANY CABLE MACHINE</h2>
+                <p>Who knew you can blast out a complete lower-body workout on this popular contraption?</p>
+                <button><a href="">Read Article</a></button>
+            </div>
+           
+        </div>
+        <div class="innerft">
+            <img src=".//photos and vds/workout2.jpg" alt="workout">
+            <div class="infotablet">
+                <h2>INTENSE WORKOUT ROUTINE, PLANS AND PROCEDURES</h2>
+            <p>Efficient Ways to become stronger and muscular</p>
+            <button><a href="">Read Article</a> </button>
+            </div>
+            
+        </div>
+    </div>
+    <h1> Products</h1>
+    <div class="products">
+        <div class="innerft">
+            <img src=".//photos and vds/elliptical article1.jpg" alt="products">
+            <div class="infotablet">
+                <h2>LATEST ELLIPTICAL ON THE MARKET WITH DISCOUNT</h2>
+                <p>Don't miss out the discount up to 50%</p>
+                <button><a href="">Shop Now</a></button>
+            </div>
+           
+        </div>
+        <div class="innerft">
+            <img src=".//photos and vds/treadmill info.jpg" alt="treadmill">
+            <div class="infotablet">
+                <h2>BRAND NEW TREADMILL WITH FAVOURABLE PRICE</h2>
+            <p> New functions, new features and tempting price</p>
+            <button><a href="">Shop Now</a> </button>
+            </div>
+            
+        </div>
+        <div class="innerft">
+            <img src=".//photos and vds/bicycle article.jpg" alt="workout">
+            <div class="infotablet">
+                <h2>BEST SELLING BIKE OF LAST MONTH</h2>
+                <p>Most Stable And Solid Ride In Its Class</p>
+                <button><a href="">Shop Now</a> </button>
+            </div>
+           
+        </div>
+    </div>
+    <h1>Nutrition</h1>
+    <div class="nutrition">
+        <div class="innerft">
+            <img src=".//photos and vds/nutrition1.jpg" alt="nutrition">
+            <div class="infotablet"><h2>BALANCE DIET CAN HELP YOU KEEP FIT</h2>
+                <p>Diet plans suggested by professionals</p>
+                <button><a href="">Read Article</a></button></div>
+            
+        </div>
+        <div class="innerft">
+            <img src=".//photos and vds/nutrition2.jpg" alt="nutrition">
+            <div class="infotablet"> <h2>How to make Tasty and nutrious homemade soup</h2>
+                <p> Chef Mike Erwin instructs how to make delicious soup</p>
+                <button><a href="">Read Article</a> </button></div>
+           
+        </div>
+        <div class="innerft">
+            <img src=".//photos and vds/info2.jpg" alt="nutrition">
+            <div class="infotablet"><h2>TRY THIS VEGAN-INSPIRED DISH FOR CHRISTMAS DINNER TWIST</h2>
+                <p>Chef Michael Floch Serves up a Merry Vegan Christmas with a tasty casserole.</p>
+                <button><a href="">Read Article</a></button></div>
+            
+        </div>
+    </div>
+    <!-- <div id="articlecontainer">
+        <div class="article">
+
+        </div>
+    </div> -->
+    </main>
+
+    <footer>
+        <div class="footermain">
+        <div>
+            <img src=".//photos and vds/gym logo.png" alt="HNG Logo" class="footerlogo">
+        </div>
+        
+        <div class="col2">
+            <ul>
+                <li><a href="Home.html">Home</a> </li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="Wanted.html">Wanted</a></li>
+                <li><a href="Workshop.html">Workshop</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <ul>
+            <li><a href="login2.html">Log In</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <!-- <li><a href="Contact.html">Contact</a></li> -->
+            <li><a href="Featured.html">Featured</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+        </ul>
+    </div>
+    <div class="col4">
+        <h2>Follow Us :</h2>
+        <div class="footericons">
+            
+            <ul>
+                <li><a href=""><img src="../dw assignment/photos and vds/facebook.png" alt="facebook logo" class="footerimg"></a></li>
+                <li><a href=""><img src="../dw assignment/photos and vds/glyph-logo_May2016-150x150.png" alt="instagrm logo" class="footerimg"></a></li>
+                <li><a href=""><img src="../dw assignment/photos and vds/Twitter_Logo_WhiteOnImage-150x150.png" alt="twitter logo" class="footerimg"></a></li>
+                <li><a href=""><img src="../dw assignment/photos and vds/yt_icon_mono_light-310x219.png" alt="youtube logo" class="footerimg"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="footerbottom">
+        <div class="footercontainer">
+            <div class="col2">
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li> <a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies Policy</a></li>
+                </ul>
+            </div>
+        <div class="col1">
+            <span>
+              <p>HGEfitness.com is part of A360 Media LLC Fitness & Health Network</p> <p>Copyright 2022 JW Media, LLC, parent company of HGE Fitness. All rights reserved.</p> 
+            </span>
+        </div>
+        
+        
+    </div>
+    </div>
+    </footer>
+</body>
+</html>

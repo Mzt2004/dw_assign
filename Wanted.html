@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanted</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="font awesome/all.css">
+     <script src="hge.js"></script>
+    <style>
+       
+
+    </style>
+<script>
+            let products=[{"img":"wanted1.jpg","name":"multi-function gym equipment","price":"$1200","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted2.jpg","name":"6 Station Exercise Equipment Machine Adjustable Weight ","price":"$354","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted3.jpg","name":"Sit Up Bench ","price":"$80","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted4.jpg","name":"Weight Bench","price":"$86","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted5.jpg","name":"50lb Weight Stack Machine ","price":"$85","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted6.jpg","name":"Gym Mirror","price":"$100","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted7.jpg","name":"Everyday Essentials Comprehensive Compact Home Fitness Gym System","price":"$1485","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"wanted8.jpg","name":"Light workout bundle","price":"$2500","btn":"Add to Cart","btn1":"More Details"},
+        {"img":"fitness mat.jpg","name":"Fitness Mat","price":"$99","btn":"Add to Cart","btn1":"More Details"},
+    ];
+    let images=products;
+    
+    
+    let show=()=>{
+        for(i=0;i<images.length;i++){
+
+            let d= document.createElement("div");
+            d.classList.add("productdiv");
+           let image= document.createElement("img");
+           image.src="../../L5 dw tutorials/dw assignment/photos and vds/"+ images[i].img;
+           let h2= document.createElement("h2");
+           h2.innerHTML=images[i].name;
+           let p= document.createElement("p");
+           p.innerHTML=images[i].price;
+           let button=document.createElement("button");
+           button.innerHTML=images[i].btn;
+           button.id="Btn"+i;
+           let button1=document.createElement("button");
+           button1.innerHTML=images[i].btn1;
+           button1.id="btn"+i;
+           d.appendChild(image);
+           d.appendChild(h2);
+           d.appendChild(p);
+           d.appendChild(button);
+           d.appendChild(button1);
+        container.appendChild(d);
+
+        }
+    }
+    let filterproduct=(g)=>{
+        let tp= g.value;
+        images=products.filter((item,index,array)=>{
+            if(item.name.includes(tp)|| item.price.includes(tp))
+            return true;
+        });
+        container.innerHTML=""
+        show();
+    }
+</script>
+
+</head>
+<body onload="show();">
+    <nav class="mynav">
+        <div class="leftnav">
+           
+                <li><img src="photos and vds/gym logo.png" alt="logo" class="logo"></li>
+            <li ><a href="Home.html">Home</a> </li>
+            <li><a href="Info.html">Info</a></li>
+            <li class="current">Wanted</li>
+            <li><a href="Workshop.html">Workshop</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li> <a href="Featured.html">Featured</a></li>
+           
+        </div>
+        <div class="rightnav">
+            <div class="login">
+                <i class="fa-solid fa-user"></i><span><a href="login.html">Sign Up</a> </span>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" onmouseover="homesearch();"></i>
+                <input type="text" id="navsearchbar" class="hidesearchbar" placeholder="Search">
+            </div>
+            
+        </div>
+    </nav>
+    <nav class="mobile">
+        <div class="mobilenav">
+            <img src="photos and vds/gym logo.png" alt="logo" class="logo">
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="Home.html"><i class="fa-solid fa-house"></i>Home</a>
+              <a href="Info.html"><i class="fa-solid fa-circle-info"></i>Info</a>
+              <a href="Wanted.html"><i class="fa-solid fa-basket-shopping"></i>Wanted</a>
+              <a href="Contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+              <a href="Workshop.html"><i class="fa-solid fa-briefcase"></i>Workshop</a>
+              <a href="Gallery.html"><i class="fa-solid fa-cart-shopping"></i>Gallery</a>
+              <a href="Featured.html"><i class="fa-solid fa-arrow-trend-up"></i>Featured</a>
+              <a href="Booking.html"><i class="fa-solid fa-mobile"></i>Booking</a>
+              <a href="login2.html"><i class="fa-solid fa-user"></i>Log In</a>
+              <a href="login.html"><i class="fa-solid fa-user-plus"></i>Sign Up</a>
+            </div>
+    </nav>
+    <section>
+          
+        </main>
+        <h1 class="wantedformh1">Search Now!</h1>
+        <div id="wantedsearch">
+            <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="searchinput" onkeyup="filterproduct(this);">
+        </div>
+        
+        <h1 class="wantedformh1">Available Second-Hand Equipment</h1>
+            <div id="slideshow-container">
+                
+                <div id="container" >
+                    
+                  
+                  
+                </div>
+                
+            </div>
+        
+        
+    </section>
+    <footer>
+        <div class="footermain">
+        <div>
+            <img src=".//photos and vds/gym logo.png" alt="HNG Logo" class="footerlogo">
+        </div>
+        
+        <div class="col2">
+            <ul>
+                <li><a href="Home.html">Home</a> </li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="Wanted.html">Wanted</a></li>
+                <li><a href="Workshop.html">Workshop</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <ul>
+            <li><a href="login2.html">Log In</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <!-- <li><a href="Contact.html">Contact</a></li> -->
+            <li><a href="Featured.html">Featured</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+        </ul>
+    </div>
+    <div class="col4">
+        <h2>Follow Us :</h2>
+        <div class="footericons">
+            
+            <ul>
+                <li><a href=""><img src="../dw assignment/photos and vds/facebook.png" alt="facebook logo" class="footerimg"></a></li>
+                <li><a href=""><img src="../dw assignment/photos and vds/glyph-logo_May2016-150x150.png" alt="instagrm logo" class="footerimg"></a></li>
+                <li><a href=""><img src="../dw assignment/photos and vds/Twitter_Logo_WhiteOnImage-150x150.png" alt="twitter logo" class="footerimg"></a></li>
+                <li><a href=""><img src="../dw assignment/photos and vds/yt_icon_mono_light-310x219.png" alt="youtube logo" class="footerimg"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="footerbottom">
+        <div class="footercontainer">
+        <div class="col1">
+            <span>
+              <p>HGEfitness.com is part of A360 Media LLC Fitness & Health Network</p> <p>Copyright 2022 JW Media, LLC, parent company of HGE Fitness. All rights reserved.</p> 
+            </span>
+        </div>
+        <div class="col2">
+            <ul>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li> <a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </footer>
+</body>
+</html>
